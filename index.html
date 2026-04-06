@@ -44,11 +44,17 @@
   </section>
 
   <!-- KONTAKT -->
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <iframe data-tally-src="https://tally.so/embed/2EvbL9?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="589" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-    <script src="https://tally.so/widgets/embed.js"></script>
-  </section>
-
+ <section id="kontakt">
+  <h2>Kontakt</h2>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="15c72d29-bef5-489e-93c7-455608b3361a">
+    <input type="hidden" name="subject" value="Neue Anfrage über Weitblick Website">
+    <input type="text" name="name" placeholder="Dein Name" required>
+    <input type="email" name="email" placeholder="Deine E-Mail" required>
+    <input type="text" name="unternehmen" placeholder="Dein Unternehmen">
+    <textarea name="nachricht" placeholder="Was kann Weitblick für dich tun?" required></textarea>
+    <button type="submit">Anfrage absenden</button>
+  </form>
+</section>
 </body>
 </html>
