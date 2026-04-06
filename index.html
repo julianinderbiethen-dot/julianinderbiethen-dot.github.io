@@ -4,206 +4,193 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weitblick – Webdesign & AI Automation</title>
-</head><style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #ffffff;
-    color: #1a1a2e;
-    line-height: 1.7;
-  }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
 
-  /* NAVIGATION */
-  nav {
-   <nav>
-  <span>Weitblick</span>
-  <div>
-    <a href="#leistungen">Leistungen</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#kontakt">Kontakt</a>
-  </div>
-</nav>
-  }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      border-bottom: 1px solid #e8e8e8;
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      z-index: 100;
+    }
 
-</nav>
-  }
+    nav span {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a6ef5;
+    }
 
-  nav div {
-    display: flex;
-    gap: 32px;
-  }
+    nav div {
+      display: flex;
+      gap: 32px;
+    }
 
-  nav a {
-    text-decoration: none;
-    color: #1a1a2e;
-    font-size: 15px;
-  }
+    nav a {
+      text-decoration: none;
+      color: #1a1a2e;
+      font-size: 15px;
+    }
 
-  nav a:hover { color: #1a6ef5; }
+    nav a:hover { color: #1a6ef5; }
 
-  /* SEKTIONEN */
-  section {
-    padding: 80px 60px;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
+    section {
+      padding: 80px 60px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
 
-  /* HERO */
-  #hero { padding-top: 100px; padding-bottom: 80px; }
+    #hero { padding-top: 100px; padding-bottom: 80px; }
 
-  #hero h1 {
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 1.2;
-    max-width: 700px;
-    margin-bottom: 24px;
-  }
+    #hero h1 {
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 1.2;
+      max-width: 700px;
+      margin-bottom: 24px;
+    }
 
-  #hero p {
-    font-size: 18px;
-    color: #555;
-    max-width: 560px;
-    margin-bottom: 40px;
-  }
+    #hero p {
+      font-size: 18px;
+      color: #555;
+      max-width: 560px;
+      margin-bottom: 40px;
+    }
 
-  #hero a {
-    background-color: #1a6ef5;
-    color: white;
-    padding: 16px 32px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-  }
+    #hero a {
+      background-color: #1a6ef5;
+      color: white;
+      padding: 16px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+    }
 
-  #hero a:hover { background-color: #0f55d4; }
+    #hero a:hover { background-color: #0f55d4; }
 
-  /* LEISTUNGEN */
-  h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
-  }
+    h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
 
-  .karten {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-  }
+    .karten {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
 
-  .karte {
-    background: #f5f8ff;
-    border-radius: 16px;
-    padding: 40px;
-    border: 1px solid #e0e8ff;
-  }
+    .karte {
+      background: #f5f8ff;
+      border-radius: 16px;
+      padding: 40px;
+      border: 1px solid #e0e8ff;
+    }
 
-  .karte h3 {
-    font-size: 22px;
-    margin-bottom: 16px;
-    color: #1a6ef5;
-  }
+    .karte h3 {
+      font-size: 22px;
+      margin-bottom: 16px;
+      color: #1a6ef5;
+    }
 
-  .karte p { color: #555; font-size: 16px; }
+    .karte p { color: #555; font-size: 16px; }
 
-  /* PORTFOLIO */
-  <!-- PORTFOLIO -->
-<section id="portfolio">
-  <h2>Portfolio</h2>
-  <div class="portfolio-platzhalter">
-    <div class="portfolio-karte">
-      <span>+</span>
-      Erstes Projekt folgt in Kürze
-    </div>
-    <div class="portfolio-karte">
-      <span>+</span>
-      Erstes Projekt folgt in Kürze
-    </div>
-  </div>
-</section>
-  }
+    .portfolio-platzhalter {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
 
-  .portfolio-karte {
-    background: #f5f8ff;
-    border-radius: 16px;
-    padding: 48px 40px;
-    border: 1px solid #e0e8ff;
-    text-align: center;
-    color: #aaa;
-    font-size: 15px;
-  }
+    .portfolio-karte {
+      background: #f5f8ff;
+      border-radius: 16px;
+      padding: 48px 40px;
+      border: 1px solid #e0e8ff;
+      text-align: center;
+      color: #aaa;
+      font-size: 15px;
+    }
 
-  .portfolio-karte span {
-    display: block;
-    font-size: 32px;
-    margin-bottom: 12px;
-  }
+    .portfolio-karte span {
+      display: block;
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
 
-  /* KONTAKT */
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 600px;
-  }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 600px;
+    }
 
-  form input, form textarea {
-    padding: 14px 18px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 15px;
-    font-family: inherit;
-    outline: none;
-    background: #f9fbff;
-  }
+    form input, form textarea {
+      padding: 14px 18px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 15px;
+      font-family: inherit;
+      outline: none;
+      background: #f9fbff;
+    }
 
-  form input:focus, form textarea:focus { border-color: #1a6ef5; background: #fff; }
+    form input:focus, form textarea:focus { border-color: #1a6ef5; background: #fff; }
 
-  form textarea { height: 140px; resize: vertical; }
+    form textarea { height: 140px; resize: vertical; }
 
-  form button {
-    background-color: #1a6ef5;
-    color: white;
-    padding: 16px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-  }
+    form button {
+      background-color: #1a6ef5;
+      color: white;
+      padding: 16px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
 
-  form button:hover { background-color: #0f55d4; }
+    form button:hover { background-color: #0f55d4; }
 
-  /* DARK MODE */
-  @media (prefers-color-scheme: dark) {
-    body { background-color: #0d0d1a; color: #f0f0f0; }
-    nav { background: #0d0d1a; border-color: #222; }
-    nav a { color: #f0f0f0; }
-    .karte { background: #13132a; border-color: #222; }
-    .karte p, #hero p { color: #aaa; }
-    .portfolio-karte { background: #13132a; border-color: #222; }
-    form input, form textarea { background: #13132a; border-color: #333; color: #f0f0f0; }
-  }
-</style>
+    @media (prefers-color-scheme: dark) {
+      body { background-color: #0d0d1a; color: #f0f0f0; }
+      nav { background: #0d0d1a; border-color: #222; }
+      nav a { color: #f0f0f0; }
+      .karte { background: #13132a; border-color: #222; }
+      .karte p, #hero p { color: #aaa; }
+      .portfolio-karte { background: #13132a; border-color: #222; }
+      form input, form textarea { background: #13132a; border-color: #333; color: #f0f0f0; }
+    }
+  </style>
+</head>
 <body>
 
-  <!-- NAVIGATION -->
   <nav>
     <span>Weitblick</span>
-    <a href="#leistungen">Leistungen</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#kontakt">Kontakt</a>
+    <div>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
   </nav>
 
-  <!-- HERO -->
   <section id="hero">
     <h1>Digitale Lösungen für lokale Unternehmen</h1>
     <p>Wir bauen moderne Websites und automatisieren Prozesse – damit du dich auf dein Business konzentrieren kannst.</p>
     <a href="#kontakt">Jetzt Kontakt aufnehmen</a>
   </section>
 
-  <!-- LEISTUNGEN -->
   <section id="leistungen">
     <h2>Leistungen</h2>
     <div class="karten">
@@ -218,24 +205,32 @@
     </div>
   </section>
 
-  <!-- PORTFOLIO -->
   <section id="portfolio">
     <h2>Portfolio</h2>
-    <p>Erste Projekte folgen in Kürze.</p>
+    <div class="portfolio-platzhalter">
+      <div class="portfolio-karte">
+        <span>+</span>
+        Erstes Projekt folgt in Kürze
+      </div>
+      <div class="portfolio-karte">
+        <span>+</span>
+        Erstes Projekt folgt in Kürze
+      </div>
+    </div>
   </section>
 
-  <!-- KONTAKT -->
- <section id="kontakt">
-  <h2>Kontakt</h2>
-  <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="15c72d29-bef5-489e-93c7-455608b3361a">
-    <input type="hidden" name="subject" value="Neue Anfrage über Weitblick Website">
-    <input type="text" name="name" placeholder="Dein Name" required>
-    <input type="email" name="email" placeholder="Deine E-Mail" required>
-    <input type="text" name="unternehmen" placeholder="Dein Unternehmen">
-    <textarea name="nachricht" placeholder="Was kann Weitblick für dich tun?" required></textarea>
-    <button type="submit">Anfrage absenden</button>
-  </form>
-</section>
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="15c72d29-bef5-489e-93c7-455608b3361a">
+      <input type="hidden" name="subject" value="Neue Anfrage über Weitblick Website">
+      <input type="text" name="name" placeholder="Dein Name" required>
+      <input type="email" name="email" placeholder="Deine E-Mail" required>
+      <input type="text" name="unternehmen" placeholder="Dein Unternehmen">
+      <textarea name="nachricht" placeholder="Was kann Weitblick für dich tun?" required></textarea>
+      <button type="submit">Anfrage absenden</button>
+    </form>
+  </section>
+
 </body>
 </html>
